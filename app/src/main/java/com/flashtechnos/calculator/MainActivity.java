@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
             buttonMul , button10 , buttonC , buttonEqual ;
 
     EditText edt1 ;
+    //Completed Java Code
 
     float mValueOne , mValueTwo ;
 
