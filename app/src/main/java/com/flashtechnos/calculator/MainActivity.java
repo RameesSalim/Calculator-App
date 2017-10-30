@@ -162,28 +162,33 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mValueTwo = Float.parseFloat(edt1.getText() + "");
+                if (edt1 == null) {
+                    edt1.setText("");
+                }
+                else{
 
-                if (mAddition == true){
+                if (mAddition == true) {
 
-                    mAddition=false;
-                    display.setText(mValueOne+"+"+mValueTwo+"="+(mValueOne + mValueTwo) +"");
+                    mAddition = false;
+                    display.setText(mValueOne + "+" + mValueTwo + "=" + (mValueOne + mValueTwo) + "");
                 }
 
 
-                if (mSubtract == true){
-                    display.setText(mValueOne+"-"+mValueTwo+"="+(mValueOne - mValueTwo) +"");
-                    mSubtract=false;
+                if (mSubtract == true) {
+                    display.setText(mValueOne + "-" + mValueTwo + "=" + (mValueOne - mValueTwo) + "");
+                    mSubtract = false;
                 }
 
-                if (mMultiplication == true){
-                    display.setText(mValueOne+"*"+mValueTwo+"="+(mValueOne * mValueTwo) +"");
-                    mMultiplication=false;
+                if (mMultiplication == true) {
+                    display.setText(mValueOne + "*" + mValueTwo + "=" + (mValueOne * mValueTwo) + "");
+                    mMultiplication = false;
                 }
 
                 if (mDivision == true) {
                     display.setText(mValueOne + "/" + mValueTwo + "=" + (mValueOne / mValueTwo) + "");
                     mDivision = false;
                 }
+            }
             }
         });
 
